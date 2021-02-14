@@ -57,8 +57,6 @@
             <h5>Lorem ipsum</h5>
           </div>
 
-          <hr>
-
           <div>
             <h5>Lorem ipsum</h5>
             <h5>Lorem ipsum</h5>
@@ -224,18 +222,26 @@
       <h3>OFERTAS</h3>
 
       <article>
-        <li>Mei eu mollis albucius, ex nisl contentiones</li>
-        <p>
-          Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
-        </p>
-        <li>Mei eu mollis albucius, ex nisl contentiones</li>
-        <p>
-          Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
-        </p>
-        <li>Mei eu mollis albucius, ex nisl contentiones</li>
-        <p>
-          Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
-        </p>
+        <div>
+          <h5>Mei eu mollis albucius, ex nisl contentiones</h5>
+          <p>
+            Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
+          </p>
+        </div>
+
+        <div>
+          <h5>Mei eu mollis albucius, ex nisl contentiones</h5>
+          <p>
+            Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
+          </p>
+        </div>
+
+        <div>
+          <h5>Mei eu mollis albucius, ex nisl contentiones</h5>
+          <p>
+            Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
+          </p>
+        </div>
       </article>
     </div>
 
@@ -243,65 +249,45 @@
       <h3>FUNCIONES</h3>
 
       <article>
-        <li>Mei eu mollis albucius, ex nisl contentiones</li>
-        <p>
-          Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
-        </p>
-        <li>Mei eu mollis albucius, ex nisl contentiones</li>
-        <p>
-          Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
-        </p>
-        <li>Mei eu mollis albucius, ex nisl contentiones</li>
-        <p>
-          Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
-        </p>
+        <div>
+          <h5>Mei eu mollis albucius, ex nisl contentiones</h5>
+          <p>
+            Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
+          </p>
+        </div>
+
+        <div>
+          <h5>Mei eu mollis albucius, ex nisl contentiones</h5>
+          <p>
+            Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
+          </p>
+        </div>
+
+        <div>
+          <h5>Mei eu mollis albucius, ex nisl contentiones</h5>
+          <p>
+            Id sea utamur aperiam, te per choro accusamus consulatu. Brute munere
+          </p>
+        </div>
       </article>
     </div>
 
     <footer>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Ayuda</a>
-          </li>
+      <h5>
+        <a href="">Ayuda</a>
+      </h5>
 
-          <li>
-            <a href="">Banca</a>
-          </li>
+      <h5>
+        <a href="">Contáctenos</a>
+      </h5>
 
-          <li>
-            <a href="">Contáctenos</a>
-          </li>
+      <h5>
+        <a href="">Juego responsable</a>
+      </h5>
 
-          <li>
-            <a href="">Juego responsable</a>
-          </li>
-
-          <li>
-            <a href="">Afiliados</a>
-          </li>
-
-          <li>
-            <a href="">Noticias</a>
-          </li>
-
-          <li>
-            <a href="">Reclamaciones</a>
-          </li>
-
-          <li>
-            <a href="">Condiciones generales</a>
-          </li>
-
-          <li>
-            <a href="">Información de empresa</a>
-          </li>
-
-          <li>
-            <a href="">Politica de privacidad</a>
-          </li>
-        </ul>
-      </nav>
+      <h5>
+        <a href="">Condiciones generales</a>
+      </h5>
     </footer>
   </div>
 </template>
@@ -409,11 +395,6 @@ header nav ul li figure img {
   color: #CECECE;
 }
 
-.grid-container footer {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
 main {
   display: grid;
   grid-template-columns: 50vw 34vw;
@@ -426,6 +407,7 @@ main section:nth-child(1) {
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: #282828;
+  border-bottom: 1px solid var(--border-color);
 }
 
 main section:nth-child(1) article {
@@ -481,14 +463,20 @@ main section:nth-child(1) article figure img {
 main section:nth-child(2) {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
+  grid-row-start: 2;
   grid-row-end: 3;
   background-color: #434343;
+  border-top: 1px #585858;
+  
 }
 
 main section:nth-child(2) h4 {
   color: #9effe0;
   padding: 2vh;
+}
+
+main section:nth-child(2) article div {
+  border-bottom: 1px solid #636363;
 }
 
 main section:nth-child(2) article:nth-child(2) {
@@ -511,6 +499,7 @@ main section:nth-child(2) article:nth-child(3) div,
 main section:nth-child(2) article:nth-child(3) div,
 main section:nth-child(2) article:nth-child(4) div {
   padding: 3vh;
+  border-top: 1px #585858;
 }
 
 main section:nth-child(3) {
@@ -521,8 +510,68 @@ main section:nth-child(3) {
   background-color: #858585;
 }
 
-hr {
-  color: white;
+.container-articles-offers {
+  border-top: 1px solid var(--border-color);
+  background-color: var(--footer-color);
+  padding: 4vh;
+  height: 20vh;
+}
+
+.container-articles-offers h3,
+.container-articles-functions h3 {
+  color: #2EC193;
+}
+
+.container-articles-offers article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-articles-offers article div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-articles-offers h5,
+.container-articles-functions h5 {
+  color: #C3C3C3;
+  padding: 1vh 0;
+  font-size: 0.7rem;
+}
+
+.container-articles-offers p,
+.container-articles-functions p {
+  color: #A7A7A7;
+  padding: 1vh 0;
+  font-size: 0.8rem;
+}
+
+.container-articles-functions {
+  border-bottom: 1px solid var(--border-color);
+  background-color: #505050;
+  padding: 4vh;
+  height: 25vh;
+}
+
+.container-articles-functions article {
+  display: flex;
+}
+
+.grid-container footer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+footer {
+  background-color: var(--footer-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15vh;
+}
+
+footer h5 a {
+  color: #A7A7A7;
 }
 
 </style>
