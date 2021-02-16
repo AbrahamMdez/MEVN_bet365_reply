@@ -508,6 +508,15 @@ main section:nth-child(3) {
   grid-row-start: 1;
   grid-row-end: 3;
   background-color: #858585;
+  padding: 2vh;
+}
+
+main section:nth-child(3) article {
+  padding: 2vh;
+}
+
+main section:nth-child(3) article div {
+  padding: 0.5vh;
 }
 
 .container-articles-offers {
